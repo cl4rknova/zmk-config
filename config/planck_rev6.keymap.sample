@@ -1,0 +1,54 @@
+/*
+* Copyright (c) 2020 The ZMK Contributors
+*
+* SPDX-License-Identifier: MIT
+*/
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+layer0 {
+        bindings = <
+        &kp Q &kp W &kp E &kp R &kp T &trans                       &trans &kp Z &kp U &kp I &kp O &kp P 
+        &kp A &lt 5 S &lt 1 D &lt 3 F &kp G &trans                 &trans &kp H &lt 4 J &lt 2 K &lt 6 L &kp DOT 
+        &kp Y &kp X &mt LEFT_ALT C &kp V &kp B &trans              &trans &kp N &kp M &mt LEFT_ALT KC_NO &kp F20 &lt 7 KC_NO
+        &trans &trans &trans &kp SPACE &kp LEFT_SHIFT &trans       &kp RIGHT_CONTROL &kp LEFT_GUI &trans &trans &trans
+        >;
+      };layer1 {
+        bindings = <
+        &trans &trans &trans &trans &kp P &trans &trans       &trans KC_BTN1 KC_WH_U KC_BTN2 &trans &trans KC_BTN2 &trans KC_BTN1 &trans &trans 
+        &trans &trans KC_MS_L KC_MS_D KC_MS_U KC_MS_R &trans &trans &trans &trans       &trans &trans &trans &trans KC_WH_L KC_WH_D KC_WH_R &trans &trans 
+        &trans &trans &trans &trans &trans &trans     &trans &trans &trans &trans
+        >;
+      };layer2 {
+        bindings = <
+        &trans &trans &kp PAGE_UP &trans &kp P &trans &trans &trans &kp C &kp R &kp L &kp BACKSPACE &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp U &trans &trans &kp H &kp LEFT_GUI &kp N LCTL(KC_LALT) LCA(KC_LSFT) &trans &kp HOME &kp PAGE_DOWN &kp END &kp K &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DELETE &trans &kp SPACE &trans &trans &trans &trans
+        >;
+      };layer3 {
+        bindings = <
+        &trans &trans &trans &trans &trans &trans &trans &trans KC_UNDS KC_PIPE &kp SINGLE_QUOTE &kp BACKSPACE KC_CIRC KC_ASTR KC_AMPR &trans &trans &trans &trans KC_HASH KC_TILD &kp SLASH KC_DQUO KC_DLR &trans &trans &trans &trans &trans &trans &trans &trans &kp MINUS &kp NON_US_BACKSLASH &kp GRAVE &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+        >;
+      };layer4 {
+        bindings = <
+        &trans KC_COLN KC_LT KC_GT &kp SEMICOLON &trans &trans &trans &trans &kp DOT &kp COMMA &kp MINUS KC_LCBR KC_RCBR KC_LPRN KC_RPRN KC_AT &trans &trans &trans &trans &kp EQUAL KC_PLUS &kp SEMICOLON &trans KC_EXLM &kp LEFT_BRACKET &kp RIGHT_BRACKET &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+        >;
+      };layer5 {
+        bindings = <
+        &trans &trans &trans &trans &trans &trans &trans &kp N1 &kp F7 &kp F8 &kp F9 &kp F10 &trans &trans LCTL(KC_LALT) &trans &trans &trans &trans &trans &kp F4 &kp F5 &kp F6 &kp F11 &trans &kp A &trans &trans &trans &trans &trans &trans &kp F1 &kp F2 &kp F3 &kp F12 &trans &trans &trans &trans &kp V &trans &trans &trans &trans &trans &trans
+        >;
+      };layer6 {
+        bindings = <
+        &trans &kp N7 &kp N8 &kp N9 RGB_MOD &trans &trans &trans &trans &trans &trans &trans &kp N0 &kp N1 &kp N2 &kp N3 &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp N4 &kp N5 &kp N6 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+        >;
+      };layer7 {
+        bindings = <
+        RALT(KC_P) &trans KC_COLN &kp ESCAPE &trans &trans &trans &trans &trans &trans &trans &kp DELETE RALT(KC_Q) KC_PERC &kp SLASH &kp ENTER &trans &trans &trans &trans &kp LEFT_GUI &trans &trans QK_BOOT RALT(KC_Y) RALT(KC_S) &trans KC_EXLM &kp INSERT &trans &trans &kp COMMA &kp DOT RALT(KC_COMM) RCTL_T(KC_DOT) &trans &trans &trans &trans &kp BACKSPACE &kp TAB &trans &trans &trans &trans &trans &trans
+        >;
+      };
+  };
+};

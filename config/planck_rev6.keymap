@@ -50,7 +50,10 @@
 		};
 layer2 {
            bindings = <
-               &trans &trans &kp PAGE_UP &trans &kp P &trans &trans &trans &kp C &kp R &kp L &kp BACKSPACE &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp U &trans &trans &kp H &kp LEFT_GUI &kp N LCTL(KC_LALT) LCA(KC_LSFT) &trans &kp HOME &kp PAGE_DOWN &kp END &kp K &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DELETE &trans &kp SPACE &trans &trans &trans &trans
+               &trans &trans &kp PAGE_UP &trans &kp P &trans       &trans &trans &kp C &kp R &kp L &kp BACKSPACE 
+               &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp U &trans     &trans &kp H &kp LEFT_GUI &kp N LCTL(KC_LALT) LCA(KC_LSFT) &trans &kp HOME 
+               &kp PAGE_DOWN &kp END &kp K &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans
+               &trans &kp DELETE &trans &kp SPACE &trans &trans &trans &trans
         >;
       };
 layer2 {
